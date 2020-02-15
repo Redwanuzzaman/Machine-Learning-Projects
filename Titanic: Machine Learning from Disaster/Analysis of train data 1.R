@@ -65,14 +65,3 @@ prop.table(table(train$Survived))
 # Visual representation of survived in train dataset
 
 barplot(table(train$Survived), xlab="Survived", ylab="People", main="Train Data Survival")
-
-# Considering everyone died in test dataset, let's make our first prediction
-# rep command the value 0 418 times in the newly created $Survived column
-
-test$Survived <- rep(0, 418)
-
-# We need to submit a csv file with the PassengerId and Survived predictions to Kaggle
-# write.csv fuction writes the prediction dataframe out to a CSV file, excluding the row numbers
-
-prediction <- data.frame(PassengerId = test$PassengerId, Survived = test$Survived)
-write.csv(prediction, file = "alldies.csv", row.names = FALSE)
