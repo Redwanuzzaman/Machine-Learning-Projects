@@ -17,19 +17,6 @@ train
 
 View(train)
 
-# Import the testing set: test
-
-# test <- read.csv('https://raw.githubusercontent.com/raqueeb/mltraining/master/ML-workbook/test.csv')
-test <- read.csv("~/datasets/titanic/test.csv")
-
-# Print test dataframe to the console
-
-test
-
-# view the test dataframe
-
-View(test)
-
 # Let's do some exploratory data analysis
 # How many people in your training set survived?
 
