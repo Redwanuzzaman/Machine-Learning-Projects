@@ -1,4 +1,4 @@
-# Decision Tree Making with RPART
+# Decision Tree Building with RPART
 
 # Set working directory and import datafiles
 # Your working directory might vary
